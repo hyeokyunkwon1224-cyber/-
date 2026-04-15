@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#020617"> <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+
+    <title>LMU PRO OS</title>
+
+    <style>
+        /* ✅ [PWA 설정 3] 웹 느낌을 지우고 앱 조작감을 주는 CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #020617; /* Slate-950 */
+            /* 아이폰 노치(상단바) 영역까지 디자인 채우기 */
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+            /* 텍스트 선택 방지 및 당겨서 새로고침 차단 */
+            -webkit-user-select: none;
+            user-select: none;
+            overscroll-behavior-y: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 입력창은 글자를 써야 하므로 예외 처리 */
+        input, textarea {
+            -webkit-user-select: auto;
+            user-select: auto;
+        }
+
+        /* 스크롤바 숨기기 (선택사항, 깔끔한 앱 느낌용) */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // [여기에 위에 주신 React 코드를 그대로 붙여넣으세요]
+        // (예시를 위해 생략, 실제 파일에서는 주신 코드를 이 자리에 넣으면 됩니다.)
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "LMU PRO OS",
+  "short_name": "LMU",
+  "display": "standalone",
+  "start_url": "index.html",
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "icons": [{"src": "https://cdn-icons-png.flaticon.com/512/25/25231.png", "sizes": "512x512", "type": "image/png"}]
+}
